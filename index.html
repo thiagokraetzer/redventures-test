@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Greenthumb</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./index.scss" />
+  <link rel="icon" type="image/png" href="images/illustrations/sun.png">
+  <script type="module" src="index.js"></script>
+</head>
+
+<body>
+  <header class="home-hero">
+    <section class="home-hero-section">
+      <div class="home-hero-bg">
+        <img class="left-leaves" src="images/hero/desktop/left-leaves.png" alt="leftLeaves">
+        <img class="plant-person" src="images/hero/desktop/plantperson.png" alt="plantPerson">
+        <img class="right-leaves" src="images/hero/desktop/right-leaves.png" alt="rightLeaves">
+      </div>
+
+      <div class="home-hero-bg-mobile">
+        <img class="mobile-leaves" src="images/hero/mobile/mobile-leaves.png" alt="leftLeaves">
+        <div class="img-wrapper">
+          <img class="mobile-plant-person" src="images/hero/mobile/mobile-plantperson.png" alt="leftLeaves">
+        </div>
+      </div>
+
+      <div class="hero-label">
+        <img src="images/icons/logo-white.svg" alt="Greenthumb" class="home-hero-thumb" />
+        <h1>Find your next green friend</h1>
+        <svg class="arrow-down" width="38px" height="48px" viewBox="0 0 38 48" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>seta</title>
+          <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="d.-results" transform="translate(-270.000000, -400.000000)" stroke="#FFFFFF"
+              stroke-width="3.67999982">
+              <path d="M284.071831,441 L266.000528,423 L284.071831,405 M266,423 L312,423" id="seta"
+                transform="translate(289.000000, 423.000000) scale(1, -1) rotate(90.000000) translate(-289.000000, -423.000000) ">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+  </header>
+
+  <section class="plants-form-section">
+    <form class="home-plants-form" action="test();" id="plantsform">
+      <div class="select-card">
+        <div class="img-wrapper">
+          <div class="img-sun"></div>
+        </div>
+        <div class="content">
+          <p class="question">
+            <strong>1. </strong>
+            Set the amount of <strong>sunlight</strong>
+            your plant will get.
+          </p>
+
+          <select id="sunlightSelect" name="sunlight" form="plantsform"
+            onchange="handleSelectOnChangeEvent(this.selectedIndex)">
+            <option class="default-select-option" value="" disabled selected>Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="select-card">
+        <div class="img-wrapper">
+          <div class="img-waterigcan"></div>
+        </div>
+        <div class="content">
+          <p class="question">
+            <strong>2. </strong>
+            How often do yout want to <strong>water</strong>
+            your plant?
+          </p>
+
+          <select id="sunlightSelect" name="sunlight" form="plantsform"
+            onchange="handleSelectOnChangeEvent(this.selectedIndex)">
+            <option class="default-select-option" value="" disabled selected>Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="select-card">
+        <div class="img-wrapper">
+          <div class="img-dog"></div>
+        </div>
+        <div class="content">
+          <p class="question">
+            <strong>3. </strong>
+            Dou you have pets? Do they <strong>chew</strong>
+            plants?
+          </p>
+
+          <select id="sunlightSelect" name="sunlight" form="plantsform"
+            onchange="handleSelectOnChangeEvent(this.selectedIndex)">
+            <option class="default-select-option" value="" disabled selected>Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="results-section">
+    <div class="left-content">
+      <h1>No results yet...</h1>
+      <p>Use the filters above to find the plant that best fits your environment :)</p>
+    </div>
+    <div class="right-content">
+      <div class="img-no-results"></div>
+    </div>
+  </section>
+</body>
+
+</html>
